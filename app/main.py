@@ -10,6 +10,10 @@ async def read_root():
 from pydantic import BaseModel
 from litellm import completion
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure LiteLLM to use Gemma.
 # For HuggingFace models, LiteLLM typically expects the model name to be prefixed with "huggingface/"

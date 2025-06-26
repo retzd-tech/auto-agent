@@ -4,3 +4,4 @@ litellm
 pytest
 pytest-asyncio # For testing async functions with pytest
 httpx # Required by TestClient for FastAPI testing
+python-dotenv # For loading environment variables from .env files

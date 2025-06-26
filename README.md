@@ -15,6 +15,8 @@ This project demonstrates how to integrate LiteLLM with a FastAPI application to
 
 ```
 .
+├── .env.example        # Example environment variables
+├── .gitignore
 ├── app
 │   ├── __init__.py
 │   └── main.py
@@ -24,6 +26,21 @@ This project demonstrates how to integrate LiteLLM with a FastAPI application to
 ├── requirements.txt
 └── README.md
 ```
+
+## Configuration
+
+This project uses a `.env` file to manage configurations, primarily the Ollama model name.
+
+1.  **Create a `.env` file:** Copy the example file:
+    ```bash
+    cp .env.example .env
+    ```
+2.  **Edit `.env`:**
+    Open the `.env` file and set your desired `OLLAMA_MODEL_NAME`. Ensure the model you specify is available in your local Ollama instance.
+    ```env
+    OLLAMA_MODEL_NAME="ollama/your-chosen-model:tag"
+    ```
+    If `OLLAMA_MODEL_NAME` is not set in the `.env` file or as an environment variable, the application will default to `ollama/qwen2.5:3b`.
 
 ## Setup and Installation
 
