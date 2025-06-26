@@ -12,6 +12,10 @@ OLLAMA_MODEL_NAME = "ollama/qwen2.5:3b"
 async def root():
     return {"message": "Welcome to the Local LLM API powered by LiteLLM + Ollama!"}
 
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
+
 class PromptInput(BaseModel):
     prompt: str
 
