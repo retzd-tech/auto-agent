@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+litellm
+pytest
+pytest-asyncio # For testing async functions with pytest
+httpx # Required by TestClient for FastAPI testing
