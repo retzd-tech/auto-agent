@@ -37,7 +37,7 @@ async def test_get_llm_response_success():
         
         assert actual_response == expected_response
         mock_litellm_completion.assert_called_once_with(
-            model="ollama/gemma:latest", # Updated to reflect change to Ollama
+            model="ollama/qwen2.5:3b", # Updated to reflect change to Ollama/qwen2.5:3b
             messages=[{"role": "user", "content": mock_prompt}]
         )
 

@@ -9,7 +9,7 @@ This project demonstrates how to integrate LiteLLM with a FastAPI application to
 - Gemma model running via Ollama as the language model. (Previously HuggingFace)
 - Unit tests for all functionalities.
 
-**Note on Ollama Setup:** This project now uses Ollama to serve the LLM locally. You need to have Ollama installed and running, and the desired model (e.g., `gemma:latest`) pulled. Visit [https://ollama.com](https://ollama.com) for installation instructions.
+**Note on Ollama Setup:** This project now uses Ollama to serve the LLM locally. You need to have Ollama installed and running, and the desired model (e.g., `qwen2.5:3b` as configured in `app/main.py`) pulled. You can change the model in `app/main.py` and ensure you have pulled it via `ollama pull <model_name>`. Visit [https://ollama.com](https://ollama.com) for installation instructions.
 
 ## Project Structure
 

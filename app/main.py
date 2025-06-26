@@ -21,8 +21,8 @@ import os
 # It's good practice to load sensitive keys or model names from environment variables.
 # For this example, we'll hardcode it for simplicity, but in a real app, use os.getenv.
 # GEMMA_MODEL_NAME = "huggingface/google/gemma-2b" # Using a smaller version for easier testing; adjust as needed.
-# Switched to Ollama. Ensure Ollama is running and the model is pulled (e.g., `ollama pull gemma:latest`)
-GEMMA_MODEL_NAME = "ollama/gemma:latest" # Or your specific Ollama model name
+# Switched to Ollama. Ensure Ollama is running and the model is pulled (e.g., `ollama pull qwen2.5:3b`)
+GEMMA_MODEL_NAME = "ollama/qwen2.5:3b" # Or your specific Ollama model name
 
 async def get_llm_response(prompt_text: str) -> str:
     """
