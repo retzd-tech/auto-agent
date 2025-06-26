@@ -37,7 +37,7 @@ async def test_get_llm_response_success():
         
         assert actual_response == expected_response
         mock_litellm_completion.assert_called_once_with(
-            model="huggingface/google/gemma-2b", # Or whatever GEMMA_MODEL_NAME is
+            model="ollama/gemma:latest", # Updated to reflect change to Ollama
             messages=[{"role": "user", "content": mock_prompt}]
         )
 
